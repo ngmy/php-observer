@@ -1,8 +1,19 @@
 {
-    "name": "ngmy/library",
+    "name": "ngmy/observer",
     "type": "library",
-    "description": "",
-    "keywords": [],
+    "description": "A PHP library to implement the observer pattern",
+    "keywords": [
+        "observer pattern",
+        "design pattern",
+        "subject",
+        "observer",
+        "pubsub",
+        "publisher",
+        "subscriber",
+        "event",
+        "event listener",
+        "event handler"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -17,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Ngmy\\Library\\": "src/"
+            "Ngmy\\Observer\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Ngmy\\Library\\Tests\\": "tests/"
+            "Ngmy\\Observer\\Tests\\": "tests/"
         }
     },
     "config": {

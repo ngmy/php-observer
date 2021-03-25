@@ -1,0 +1,10 @@
+{
+    "diagnostic-languageserver.linters": {
+        "ngmy.laradock.composer.lint": {
+            "args": ["exec", "-u", "laradock", "laradock-ngmy-php-observer_workspace_1", "composer", "lint", "--", "--report=emacs"]
+        },
+        "ngmy.laradock.composer.findbugs": {
+            "args": ["exec", "-u", "laradock", "laradock-ngmy-php-observer_workspace_1", "composer", "findbugs", "--", "--error-format", "raw", "--no-progress"]
+        }
+    }
+}
