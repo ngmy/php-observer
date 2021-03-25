@@ -1,4 +1,13 @@
 # PHP Observer
+[![Latest Stable Version](https://poser.pugx.org/ngmy/observer/v)](//packagist.org/packages/ngmy/observer)
+[![Total Downloads](https://poser.pugx.org/ngmy/observer/downloads)](//packagist.org/packages/ngmy/observer)
+[![Latest Unstable Version](https://poser.pugx.org/ngmy/observer/v/unstable)](//packagist.org/packages/ngmy/observer)
+[![License](https://poser.pugx.org/ngmy/observer/license)](//packagist.org/packages/ngmy/observer)
+[![composer.lock](https://poser.pugx.org/ngmy/observer/composerlock)](//packagist.org/packages/ngmy/observer)
+[![PHP CI](https://github.com/ngmy/php-observer/actions/workflows/php.yml/badge.svg)](https://github.com/ngmy/php-observer/actions/workflows/php.yml)
+[![Coverage Status](https://coveralls.io/repos/github/ngmy/php-observer/badge.svg?branch=master)](https://coveralls.io/github/ngmy/php-observer?branch=master)
+[![PHPStan](https://img.shields.io/badge/PHPStan-enabled-brightgreen.svg?style=flat)](https://github.com/phpstan/phpstan)
+
 PHP Observer is a PHP library to implement the [observer pattern](https://en.wikipedia.org/wiki/Observer_pattern).
 
 - Provides the subject and observer interfaces. This allows you to implement the concrete subject and observer classes
