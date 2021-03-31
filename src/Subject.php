@@ -9,6 +9,7 @@ abstract class Subject
     /**
      * @var array<int, Observer>
      * @phpstan-var list<Observer>
+     * @psalm-var list<Observer>
      */
     protected $observers = [];
 
