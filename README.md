@@ -7,6 +7,8 @@
 [![PHP CI](https://github.com/ngmy/php-observer/actions/workflows/php.yml/badge.svg)](https://github.com/ngmy/php-observer/actions/workflows/php.yml)
 [![Coverage Status](https://coveralls.io/repos/github/ngmy/php-observer/badge.svg?branch=master)](https://coveralls.io/github/ngmy/php-observer?branch=master)
 [![PHPStan](https://img.shields.io/badge/PHPStan-enabled-brightgreen.svg?style=flat)](https://github.com/phpstan/phpstan)
+[![Psalm Coverage](https://shepherd.dev/github/ngmy/php-observer/coverage.svg?)](https://shepherd.dev/github/ngmy/php-observer)
+[![Psalm Level](https://shepherd.dev/github/ngmy/php-observer/level.svg?)](https://shepherd.dev/github/ngmy/php-observer)
 
 PHP Observer is a PHP library to implement the [observer pattern](https://en.wikipedia.org/wiki/Observer_pattern).
 
