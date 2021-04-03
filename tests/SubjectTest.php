@@ -6,6 +6,15 @@ namespace Ngmy\Observer\Tests;
 
 use Ngmy\Observer\Observer;
 
+use function assert;
+use function count;
+use function method_exists;
+use function ob_get_clean;
+use function ob_start;
+use function str_repeat;
+
+use const PHP_EOL;
+
 class SubjectTest extends TestCase
 {
     /**
@@ -37,7 +46,7 @@ class SubjectTest extends TestCase
     public function testAttach(array $observerClasses): void
     {
         $subject = new Data\ConcreteSubject();
-        \assert(\method_exists($subject, 'getObservers'));
+        assert(method_exists($subject, 'getObservers'));
         $expected = [];
         foreach ($observerClasses as $observerClass) {
             $expected[] = new $observerClass($subject);
@@ -75,7 +84,7 @@ class SubjectTest extends TestCase
     public function testDetach(array $observerClasses): void
     {
         $subject = new Data\ConcreteSubject();
-        \assert(\method_exists($subject, 'getObservers'));
+        assert(method_exists($subject, 'getObservers'));
         $observers = [];
         foreach ($observerClasses as $observerClass) {
             $observers[] = new $observerClass($subject);
@@ -116,16 +125,16 @@ class SubjectTest extends TestCase
     public function testNofity(array $observerClasses): void
     {
         $subject = new Data\ConcreteSubject();
-        \assert(\method_exists($subject, 'getObservers'));
+        assert(method_exists($subject, 'getObservers'));
         $observers = [];
         foreach ($observerClasses as $observerClass) {
             $observers[] = new $observerClass($subject);
         }
         $state = 'Test the observer pattern';
-        $expected = \str_repeat($state . \PHP_EOL, \count($observers));
-        \ob_start();
+        $expected = str_repeat($state . PHP_EOL, count($observers));
+        ob_start();
         $subject->setState($state);
-        $actual = \ob_get_clean();
+        $actual = ob_get_clean();
         $this->assertEquals($expected, $actual);
     }
 }

@@ -7,6 +7,8 @@ namespace Ngmy\Observer\Tests\Data;
 use Ngmy\Observer\Observer;
 use Ngmy\Observer\Subject;
 
+use const PHP_EOL;
+
 class ConcreteObserver implements Observer
 {
     /** @var string */
@@ -29,7 +31,7 @@ class ConcreteObserver implements Observer
     {
         if ($changedSubject === $this->subject) {
             $this->state = $this->subject->getState();
-            echo $this->state . \PHP_EOL;
+            echo $this->state . PHP_EOL;
         }
     }
 
