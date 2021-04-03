@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Ngmy\Observer;
 
+use function array_values;
+
 abstract class Subject
 {
     /**
@@ -23,7 +25,7 @@ abstract class Subject
         foreach ($this->observers as $i => $o) {
             if ($o->equals($observer)) {
                 unset($this->observers[$i]);
-                $this->observers = \array_values($this->observers);
+                $this->observers = array_values($this->observers);
                 return;
             }
         }
